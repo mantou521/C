@@ -14,6 +14,7 @@ void ReverseString(char* s, int from, int to)
 void LeftRotateString(char* s, int n, int m)
 {
   m %=n;
+
   ReverseString(s, 0, m - 1);
   ReverseString(s, m, n - 1);
   ReverseString(s, 0, n - 1);
